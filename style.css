@@ -1,52 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: white;
+    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #007bff;
+    background-color: #005b96; /* Softer shade of blue */
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 nav {
-    background-color: #0056b3;
-    padding: 10px 0;
+    background-color: #00457c; /* Slightly darker blue for contrast */
+    padding: 15px 0;
     text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    transition: background-color 0.3s;
+    padding: 10px 25px;
+    margin: 0 15px;
+    transition: background-color 0.3s ease;
     display: inline-flex;
     align-items: center;
 }
 
 nav a i {
-    margin-right: 8px;
+    margin-right: 15px; /* Increased margin for more space between icon and text */
 }
 
 nav a:hover {
-    background-color: #007bff;
+    background-color: #006bb3; /* A lighter blue for hover effect */
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 30px;
+    margin: 30px;
+    background-color: white; /* Adds a contrasting background for the section */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Adds subtle shadow to the section */
 }
 
 footer {
-    background-color: #007bff;
+    background-color: #005b96; /* Same as header for consistency */
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
