@@ -8,14 +8,14 @@ body {
 }
 
 header {
-    background-color: #005b96; /* Softer shade of blue */
+    background-color: #005b96;
     color: white;
     text-align: center;
     padding: 30px 0;
 }
 
 nav {
-    background-color: #00457c; /* Slightly darker blue for contrast */
+    background-color: #00457c;
     padding: 15px 0;
     text-align: center;
 }
@@ -31,27 +31,51 @@ nav a {
 }
 
 nav a i {
-    margin-right: 15px; /* Increased margin for more space between icon and text */
+    margin-right: 15px;
 }
 
 nav a:hover {
-    background-color: #006bb3; /* A lighter blue for hover effect */
+    background-color: #006bb3;
 }
 
 section {
     padding: 30px;
     margin: 30px;
-    background-color: white; /* Adds a contrasting background for the section */
-    border-radius: 10px; /* Rounded corners for the section */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Adds subtle shadow to the section */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-footer {
-    background-color: #005b96; /* Same as header for consistency */
-    color: white;
+.timeline-horizontal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.checkpoint-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin: 10px;
+}
+
+.checkpoint-horizontal::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #005b96;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-weight: bold;
+    color: #333;
+}
+
+.event {
+    color: #666;
 }
